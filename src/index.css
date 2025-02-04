@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #f19509;
+    --color-primaryDark: #e86f00;
+    --color-lightOrange: #f1dabf;
+    --color-darkGray: #1a1f25;
+    --color-lightGray: #272c35;
+}
+
+@layer components {
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    
+      /* Responsive container padding */
+@media (min-width: 640px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .container {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+}
