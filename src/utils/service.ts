@@ -1,5 +1,5 @@
-import coffee1Image from "../../assets/coffee1.png";
-import coffee2Image from "../../assets/coffee3.png";
+import coffee1Image from "@/assets/coffee1.png";
+import coffee2Image from "@/assets/coffee3.png";
 
 export const servicesData = [
     {
