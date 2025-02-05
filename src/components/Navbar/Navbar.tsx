@@ -1,5 +1,6 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
+import logoImage from "@/assets/logo.png";
 
 interface NavbarProps {
     setClick: React.Dispatch<React.SetStateAction<boolean>>
@@ -15,11 +16,12 @@ const Navbar = ({setClick}:NavbarProps) => {
     >
         <div className="container">
             <div className="text-white flex justify-between items-center">
-                <div className="text-2xl">
-                    <h2>
-                        <span className="text-primary">Coders</span> Coffee.
-                    </h2>
-                </div>
+            <img
+              
+              src={logoImage}
+              className="w-[100px]"
+              alt=""
+            />
                 <div>
                     <GiHamburgerMenu onClick={() => setClick((prev)=> !prev)} className="cursor-pointer text-3xl" />
                 </div>

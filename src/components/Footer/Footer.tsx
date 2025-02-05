@@ -111,7 +111,7 @@ const Footer = () => {
           </motion.div>
         </motion.div>
         <p className="pt-8 text-center">
-          Copyright © 2024 Company Name. All rights reserved.
+          Copyright © 2025 Morning Roast. All rights reserved.
         </p>
       </div>
     </footer>
