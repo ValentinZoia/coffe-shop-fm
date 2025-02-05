@@ -9,7 +9,7 @@ const Services = () => {
     visible: {
       // opacity: 1,
       transition: {
-        staggerChildren: 0.8,
+        staggerChildren: 0.8, // ajusta el delay entre hijos, aparecen de uno en uno
         delay: 0.6,
       },
     },
@@ -40,6 +40,7 @@ const Services = () => {
           <motion.h2
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{once:true}}
             transition={{
               type: "spring",
               stifness: 150,
@@ -53,6 +54,7 @@ const Services = () => {
           <motion.p
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{once:true}}
             transition={{
               type: "spring",
               stifness: 150,
@@ -70,15 +72,18 @@ const Services = () => {
         {/* content section */}
         <motion.div
           variants={containerVariants}
+          
           initial="hidden"
           whileInView="visible"
           className="grid sm:grid-cols-2 md:grid-cols-3"
+          viewport={{once:true}}
         >
           {servicesData.map((item) => (
             <motion.div
               variants={cardVariants}
               key={item.id}
               className="text-center space-y-5"
+              viewport={{once:true}}
             >
               <div>
                 <img

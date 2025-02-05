@@ -13,6 +13,7 @@ const WhereToBuy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", delay: 0.2 }}
               className="font-bold text-4xl font-serif text-darkGray"
+              viewport={{once:true}}
             >
               Buy our products from anywhere
             </motion.h2>
@@ -22,6 +23,7 @@ const WhereToBuy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", delay: 0.4 }}
               className="flex gap-4"
+              viewport={{once:true}}
             >
               <input
                 type="text"
@@ -39,6 +41,8 @@ const WhereToBuy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", delay: 0.6 }}
               className="flex gap-4"
+              viewport={{once:true}}
+              
             >
               <input
                 type="text"
@@ -56,6 +60,7 @@ const WhereToBuy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", delay: 0.8 }}
               className="w-full btn-style"
+              viewport={{once:true}}
             >
               Order Now
             </motion.button>

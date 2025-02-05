@@ -43,6 +43,7 @@ const DownloadTheApp = () => {
         >
           {/* content */}
           <motion.div
+          viewport={{once:true}}
             variants={parentVariants}
             initial="hidden"
             whileInView="visible"
